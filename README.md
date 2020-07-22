@@ -1,17 +1,14 @@
 <p align="center"><img src="https://i.imgur.com/iOlG06h.png" width="400"></p>
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-# About Laravel Vue Base
+# Laravel Vue Base
 
-A Laravel-Vue SPA starter project template.
+A Laravel Vue SPA starter project template.
 
-## Install Vue Scaffolding
+## How To Install Vue Scaffolding
 
 To install Vue scaffolding on your project, you must have laravel/ui package installed on your laravel project.
 Navigate to your project directory in your terminal / command-line and run the following command to install the package
