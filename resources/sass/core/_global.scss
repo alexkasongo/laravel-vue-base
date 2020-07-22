@@ -1,3 +1,6 @@
+/*
+* css global reset settings
+*/
 html,
 body {
     @include clearfix;
@@ -7,6 +10,7 @@ body {
     padding: 0;
     min-height: 100%;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 *,
 *:before,

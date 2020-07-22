@@ -1914,6 +1914,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log("Component mounted.");
@@ -6364,7 +6376,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/*\n* Color Variables\n* Using http://chir.ag/projects/name-that-color/#6195ED for color names\n*/\n/*\n* Fonts\n*/\n/*\n* Primary and Secondary Font Colours\n*/\n/*\n* Body Color\n*/\n/*\n* Box shadow\n*/\n/*\n* Break points\n*/\n/*\n* Z-index\n*/\n/*\n*   Font mixins\n*/\np[data-v-ce46e8dc] {\n  color: #111111;\n  font-family: \"Lato-Light\", sans-serif;\n  font-size: 16px;\n}\n.h1[data-v-ce46e8dc] {\n  color: #aaaaaa;\n  font-family: \"Lato-Bold\", sans-serif;\n  font-size: 36px;\n}\n.h2[data-v-ce46e8dc] {\n  color: #aaaaaa;\n  font-family: \"Lato-Bold\", sans-serif;\n  font-size: 30px;\n}\n.h3[data-v-ce46e8dc] {\n  color: #aaaaaa;\n  font-family: \"Lato-Bold\", sans-serif;\n  font-size: 24px;\n}\n.h4[data-v-ce46e8dc] {\n  color: #aaaaaa;\n  font-family: \"Lato-Bold\", sans-serif;\n  font-size: 18px;\n}\n.h5[data-v-ce46e8dc] {\n  color: #aaaaaa;\n  font-family: \"Lato-Regular\", sans-serif;\n  font-size: 12px;\n}\n.h6[data-v-ce46e8dc] {\n  color: #aaaaaa;\n  font-family: \"Lato-Regular\", sans-serif;\n  font-size: 10px;\n}\n.article__title[data-v-ce46e8dc] {\n  background-color: rebeccapurple;\n  color: #aaaaaa;\n  font-family: \"Lato-Bold\", sans-serif;\n  font-size: 24px;\n}", ""]);
+exports.push([module.i, "/*\n* Color Variables\n* Using http://chir.ag/projects/name-that-color/#6195ED for color names\n*/\n/*\n* Fonts\n*/\n/*\n* Fonts\n*/\n/*\n* Primary and Secondary Font Colours\n*/\n/*\n* Body Color\n*/\n/*\n* Box shadow\n*/\n/*\n* Break points\n*/\n/*\n* Z-index\n*/\n/*\n*   Font mixins\n*/\n/*\n* Shared styling\n*/\nh1[data-v-ce46e8dc],\nh2[data-v-ce46e8dc],\nh3[data-v-ce46e8dc],\nh4[data-v-ce46e8dc],\nh5[data-v-ce46e8dc],\nh6[data-v-ce46e8dc] {\n  margin: 0;\n  line-height: 1.45;\n}\np[data-v-ce46e8dc] {\n  color: #333;\n  font-family: \"Lato-Light\", sans-serif;\n  font-size: 16px;\n  line-height: 1.45;\n}\n.h1[data-v-ce46e8dc] {\n  color: #333;\n  font-family: \"Lato-Bold\", sans-serif;\n  font-size: 36px;\n}\n.h2[data-v-ce46e8dc] {\n  color: #333;\n  font-family: \"Lato-Bold\", sans-serif;\n  font-size: 30px;\n}\n.h3[data-v-ce46e8dc] {\n  color: #333;\n  font-family: \"Lato-Bold\", sans-serif;\n  font-size: 24px;\n}\n.h4[data-v-ce46e8dc] {\n  color: #333;\n  font-family: \"Lato-Bold\", sans-serif;\n  font-size: 18px;\n}\n.h5[data-v-ce46e8dc] {\n  color: #333;\n  font-family: \"Lato-Regular\", sans-serif;\n  font-size: 14px;\n}\n.h6[data-v-ce46e8dc] {\n  color: #dddddd;\n  font-family: \"Lato-Regular\", sans-serif;\n  font-size: 14px;\n  line-height: 1.45;\n}\n.article[data-v-ce46e8dc] {\n  padding: 20px;\n  margin: auto;\n  max-width: 500px;\n}\n.article__h1[data-v-ce46e8dc] {\n  color: #333;\n  font-family: \"Lato-Bold\", sans-serif;\n  font-size: 36px;\n}\n.article__h2[data-v-ce46e8dc] {\n  color: #333;\n  font-family: \"Lato-Bold\", sans-serif;\n  font-size: 30px;\n}\n.article__h3[data-v-ce46e8dc] {\n  color: #333;\n  font-family: \"Lato-Bold\", sans-serif;\n  font-size: 24px;\n}\n.article__h4[data-v-ce46e8dc] {\n  color: #333;\n  font-family: \"Lato-Bold\", sans-serif;\n  font-size: 18px;\n}\n.article__h5[data-v-ce46e8dc] {\n  color: #333;\n  font-family: \"Lato-Bold\", sans-serif;\n  font-size: 14px;\n}\n.article__h6[data-v-ce46e8dc] {\n  color: #333;\n  font-family: \"Lato-Bold\", sans-serif;\n  font-size: 12px;\n}\n.article__para[data-v-ce46e8dc] {\n  color: #333;\n  font-family: \"Lato-Light\", sans-serif;\n  font-size: 16px;\n  line-height: 1.45;\n}\n.article__caption[data-v-ce46e8dc] {\n  color: #dddddd;\n  font-family: \"Lato-Regular\", sans-serif;\n  font-size: 14px;\n  line-height: 1.45;\n}\n.article__box-shadow[data-v-ce46e8dc] {\n  height: 200px;\n  width: 200px;\n  border-radius: 8px;\n  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);\n}", ""]);
 
 // exports
 
@@ -38167,7 +38179,27 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "article" }, [
-      _c("h1", { staticClass: "article__title" }, [_vm._v("demo title")])
+      _c("h1", { staticClass: "article__h1" }, [_vm._v("H1 h1")]),
+      _vm._v(" "),
+      _c("h2", { staticClass: "article__h2" }, [_vm._v("H2 h2")]),
+      _vm._v(" "),
+      _c("h3", { staticClass: "article__h3" }, [_vm._v("H3 h3")]),
+      _vm._v(" "),
+      _c("h4", { staticClass: "article__h4" }, [_vm._v("H4 h4")]),
+      _vm._v(" "),
+      _c("h5", { staticClass: "article__h5" }, [_vm._v("H5 h5")]),
+      _vm._v(" "),
+      _c("h6", { staticClass: "article__h6" }, [_vm._v("H6 h6")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "article__para" }, [
+        _vm._v(
+          "\n    Lorem ipsum, dolor sit amet consectetur adipisicing elit.\n    Facilis minus sint voluptatem assumenda quae fugit aspernatur sunt distinctio\n    corrupti maxime veritatis, rem, aliquid obcaecati reprehenderit nemo,\n    atque optio quos tempore.\n  "
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "article__caption" }, [
+        _vm._v("atque optio quos tempore.")
+      ])
     ])
   }
 ]

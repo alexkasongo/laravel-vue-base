@@ -3,8 +3,38 @@
 @import "../core/typography";
 
 .article {
-    &__title {
-        background-color: rebeccapurple;
+    padding: 20px;
+    margin: auto;
+    max-width: 500px;
+
+    &__h1 {
+        @include h1;
+    }
+    &__h2 {
+        @include h2;
+    }
+    &__h3 {
         @include h3;
+    }
+    &__h4 {
+        @include h4;
+    }
+    &__h5 {
+        @include h5;
+    }
+    &__h6 {
+        @include h6;
+    }
+    &__para {
+        @include para;
+    }
+    &__caption {
+        @include caption;
+    }
+    &__box-shadow {
+        height: 200px;
+        width: 200px;
+        border-radius: 8px;
+        box-shadow: $box-shadow;
     }
 }

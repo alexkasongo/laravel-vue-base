@@ -26,6 +26,10 @@
 */
 
 /*
+* Fonts
+*/
+
+/*
 * Primary and Secondary Font Colours
 */
 
@@ -49,56 +53,77 @@
 *   Font mixins
 */
 
+/*
+* Shared styling
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.45;
+}
+
 p {
-  color: #111111;
+  color: #333;
   font-family: "Lato-Light", sans-serif;
   font-size: 16px;
+  line-height: 1.45;
 }
 
 .h1 {
-  color: #aaaaaa;
+  color: #333;
   font-family: "Lato-Bold", sans-serif;
   font-size: 36px;
 }
 
 .h2 {
-  color: #aaaaaa;
+  color: #333;
   font-family: "Lato-Bold", sans-serif;
   font-size: 30px;
 }
 
 .h3 {
-  color: #aaaaaa;
+  color: #333;
   font-family: "Lato-Bold", sans-serif;
   font-size: 24px;
 }
 
 .h4 {
-  color: #aaaaaa;
+  color: #333;
   font-family: "Lato-Bold", sans-serif;
   font-size: 18px;
 }
 
 .h5 {
-  color: #aaaaaa;
+  color: #333;
   font-family: "Lato-Regular", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .h6 {
-  color: #aaaaaa;
+  color: #dddddd;
   font-family: "Lato-Regular", sans-serif;
-  font-size: 10px;
+  font-size: 14px;
+  line-height: 1.45;
 }
+
+/*
+* css global reset settings
+*/
 
 html,
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: "Lato-Regular", sans-serif;
   margin: 0;
   padding: 0;
   min-height: 100%;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 html:before,
@@ -180,6 +205,10 @@ p:empty {
 */
 
 /*
+* Fonts
+*/
+
+/*
 * Primary and Secondary Font Colours
 */
 
@@ -203,52 +232,124 @@ p:empty {
 *   Font mixins
 */
 
+/*
+* Shared styling
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.45;
+}
+
 p {
-  color: #111111;
+  color: #333;
   font-family: "Lato-Light", sans-serif;
   font-size: 16px;
+  line-height: 1.45;
 }
 
 .h1 {
-  color: #aaaaaa;
+  color: #333;
   font-family: "Lato-Bold", sans-serif;
   font-size: 36px;
 }
 
 .h2 {
-  color: #aaaaaa;
+  color: #333;
   font-family: "Lato-Bold", sans-serif;
   font-size: 30px;
 }
 
 .h3 {
-  color: #aaaaaa;
+  color: #333;
   font-family: "Lato-Bold", sans-serif;
   font-size: 24px;
 }
 
 .h4 {
-  color: #aaaaaa;
+  color: #333;
   font-family: "Lato-Bold", sans-serif;
   font-size: 18px;
 }
 
 .h5 {
-  color: #aaaaaa;
+  color: #333;
   font-family: "Lato-Regular", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .h6 {
-  color: #aaaaaa;
+  color: #dddddd;
   font-family: "Lato-Regular", sans-serif;
-  font-size: 10px;
+  font-size: 14px;
+  line-height: 1.45;
 }
 
-.article__title {
-  background-color: rebeccapurple;
-  color: #aaaaaa;
+.article {
+  padding: 20px;
+  margin: auto;
+  max-width: 500px;
+}
+
+.article__h1 {
+  color: #333;
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 36px;
+}
+
+.article__h2 {
+  color: #333;
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 30px;
+}
+
+.article__h3 {
+  color: #333;
   font-family: "Lato-Bold", sans-serif;
   font-size: 24px;
+}
+
+.article__h4 {
+  color: #333;
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 18px;
+}
+
+.article__h5 {
+  color: #333;
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 14px;
+}
+
+.article__h6 {
+  color: #333;
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 12px;
+}
+
+.article__para {
+  color: #333;
+  font-family: "Lato-Light", sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.article__caption {
+  color: #dddddd;
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.article__box-shadow {
+  height: 200px;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
 }
 
