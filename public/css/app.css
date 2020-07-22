@@ -17,47 +17,76 @@
 }
 
 /*
+* Color Variables
+* Using http://chir.ag/projects/name-that-color/#6195ED for color names
+*/
+
+/*
+* Fonts
+*/
+
+/*
+* Primary and Secondary Font Colours
+*/
+
+/*
+* Body Color
+*/
+
+/*
+* Box shadow
+*/
+
+/*
+* Break points
+*/
+
+/*
+* Z-index
+*/
+
+/*
 *   Font mixins
 */
 
 p {
-  color: #4a4a4a;
+  color: #111111;
   font-family: "Lato-Light", sans-serif;
   font-size: 16px;
 }
 
 .h1 {
-  color: #101010;
+  color: #aaaaaa;
   font-family: "Lato-Bold", sans-serif;
   font-size: 36px;
 }
 
 .h2 {
-  color: #101010;
+  color: #aaaaaa;
   font-family: "Lato-Bold", sans-serif;
   font-size: 30px;
 }
 
 .h3 {
-  color: #101010;
+  color: #aaaaaa;
   font-family: "Lato-Bold", sans-serif;
   font-size: 24px;
 }
 
 .h4 {
-  color: #101010;
+  color: #aaaaaa;
   font-family: "Lato-Bold", sans-serif;
   font-size: 18px;
 }
 
 .h5 {
-  color: #101010;
+  color: #aaaaaa;
   font-family: "Lato-Regular", sans-serif;
   font-size: 12px;
 }
 
 .h6 {
-  color: #f5f5f5;
+  color: #aaaaaa;
   font-family: "Lato-Regular", sans-serif;
   font-size: 10px;
 }
@@ -133,7 +162,7 @@ p:empty {
 }
 
 *:focus {
-  outline: 1px solid #2458a4;
+  outline: 1px solid #a8dadc;
 }
 
 .no-scroll {
@@ -142,54 +171,83 @@ p:empty {
 }
 
 /*
+* Color Variables
+* Using http://chir.ag/projects/name-that-color/#6195ED for color names
+*/
+
+/*
+* Fonts
+*/
+
+/*
+* Primary and Secondary Font Colours
+*/
+
+/*
+* Body Color
+*/
+
+/*
+* Box shadow
+*/
+
+/*
+* Break points
+*/
+
+/*
+* Z-index
+*/
+
+/*
 *   Font mixins
 */
 
 p {
-  color: #4a4a4a;
+  color: #111111;
   font-family: "Lato-Light", sans-serif;
   font-size: 16px;
 }
 
 .h1 {
-  color: #101010;
+  color: #aaaaaa;
   font-family: "Lato-Bold", sans-serif;
   font-size: 36px;
 }
 
 .h2 {
-  color: #101010;
+  color: #aaaaaa;
   font-family: "Lato-Bold", sans-serif;
   font-size: 30px;
 }
 
 .h3 {
-  color: #101010;
+  color: #aaaaaa;
   font-family: "Lato-Bold", sans-serif;
   font-size: 24px;
 }
 
 .h4 {
-  color: #101010;
+  color: #aaaaaa;
   font-family: "Lato-Bold", sans-serif;
   font-size: 18px;
 }
 
 .h5 {
-  color: #101010;
+  color: #aaaaaa;
   font-family: "Lato-Regular", sans-serif;
   font-size: 12px;
 }
 
 .h6 {
-  color: #f5f5f5;
+  color: #aaaaaa;
   font-family: "Lato-Regular", sans-serif;
   font-size: 10px;
 }
 
 .article__title {
   background-color: rebeccapurple;
-  color: #101010;
+  color: #aaaaaa;
   font-family: "Lato-Bold", sans-serif;
   font-size: 24px;
 }
