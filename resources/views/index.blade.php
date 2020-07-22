@@ -26,12 +26,7 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    aleko
-                </div>
-
-                <example-component></example-component>
-
+                <article-component></article-component>
             </div>
         </div>
         <script src="js/app.js"></script>

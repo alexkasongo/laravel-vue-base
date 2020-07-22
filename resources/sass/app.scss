@@ -1,7 +1,6 @@
 // mixins
 @import "mixins/clearfix";
 @import "mixins/flexbox";
-@import "components/blog";
 
 // Core
 @import "core/fonts";
@@ -10,3 +9,4 @@
 @import "core/global";
 
 // Components
+@import "components/article";
