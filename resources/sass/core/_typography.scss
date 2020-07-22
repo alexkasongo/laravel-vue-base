@@ -1,0 +1,130 @@
+@mixin h1($color: $secondary-font-color, $family: $bold-font) {
+    color: $color;
+    font-family: $family;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -5px;
+    @media (min-width: $tablet) {
+        font-size: 110px;
+        line-height: 110px;
+    }
+}
+@mixin h2($color: $secondary-font-color, $family: $bold-font) {
+    color: $color;
+    font-family: $family;
+    font-size: 24px;
+    line-height: 29px;
+    @media (min-width: $tablet) {
+        font-size: 26px;
+    }
+}
+@mixin h3($color: $secondary-font-color, $family: $bold-font) {
+    font-family: $family;
+    font-size: 20px;
+    line-height: 24px;
+    @media (min-width: $tablet) {
+        font-size: 20px;
+    }
+}
+@mixin h4($color: $secondary-font-color, $family: $bold-font) {
+    color: $color;
+    font-family: $family;
+    font-size: 18px;
+    line-height: 22px;
+    @media (min-width: $desktop) {
+        font-size: 18px;
+    }
+}
+@mixin h5($color: $secondary-font-color, $family: $Light-font) {
+    color: $color;
+    font-family: $family;
+    font-size: 17px;
+    line-height: 20px;
+    @media (min-width: $tablet) {
+        font-size: 17px;
+    }
+}
+@mixin h6($color: $secondary-font-color, $family: $Light-font) {
+    color: $color;
+    font-family: $family;
+    font-size: 14px;
+    @media (min-width: $tablet) {
+        font-size: 14px;
+    }
+}
+@mixin caption($color: $warm-grey, $family: $primary-font) {
+    color: $color;
+    font-family: $family;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    @media (min-width: $tablet) {
+        font-size: 11px;
+        line-height: 1.91;
+    }
+}
+@mixin button($color: $secondary-font-color, $family: $primary-font) {
+    color: $color;
+    font-family: $family;
+    font-size: 12px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    @media (min-width: $tablet) {
+        font-size: 13px;
+    }
+}
+@mixin para($color: $primary-font-color, $family: $Light-font) {
+    color: $color;
+    font-family: $family;
+    font-size: 16px;
+    font-style: light;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: normal;
+    @media (min-width: $tablet) {
+        font-size: 16px;
+    }
+}
+@mixin link($color: $primary-font-color, $family: $bold-font) {
+    color: $color;
+    font-family: $family;
+    font-size: 14px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.39px;
+    @media (min-width: $tablet) {
+        font-size: 18px;
+        letter-spacing: -0.5px;
+    }
+}
+p {
+    @include para;
+    &.smaller {
+        font-size: 14px;
+    }
+}
+.h1 {
+    @include h1();
+}
+.h2 {
+    @include h2();
+}
+.h3 {
+    @include h3();
+}
+.h4 {
+    @include h4();
+}
+.h5 {
+    @include button();
+}
+.h6 {
+    @include caption();
+}

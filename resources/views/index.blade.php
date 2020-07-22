@@ -32,8 +32,8 @@
 
                 <example-component></example-component>
 
-                <script src="js/app.js"></script>
             </div>
         </div>
+        <script src="js/app.js"></script>
     </body>
 </html>
