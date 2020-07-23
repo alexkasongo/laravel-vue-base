@@ -1,3 +1,17 @@
+/** 
+ * The clearfix hack is a popular way to contain floats without resorting to using presentational markup.
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ *  
+ *  Source: http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+
 @font-face {
   font-family: "Lato-Light";
   src: url(/fonts/Lato-Light.woff2?b20d8627394925037920ed24437e863c) format("woff2"), url(/fonts/Lato-Light.woff?6b337259c0ec1444e69c7f0f8627dbea) format("woff"), url(/fonts/Lato-Light.ttf?4c3b8b453f4a323970b8189f625fdeeb) format("ttf");
@@ -117,6 +131,10 @@ p {
 
 html,
 body {
+  /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
   background-color: #fff;
   font-family: "Lato-Regular", sans-serif;
   margin: 0;
@@ -126,17 +144,24 @@ body {
   box-sizing: border-box;
 }
 
-html:before,
-html:after,
-body:before,
-body:after {
+html .cf:before,
+html .cf:after,
+body .cf:before,
+body .cf:after {
   content: " ";
+  /* 1 */
   display: table;
+  /* 2 */
 }
 
-html:after,
-body:after {
+html .cf:after,
+body .cf:after {
   clear: both;
+}
+
+html .cf,
+body .cf {
+  *zoom: 1;
 }
 
 *,
