@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /** 
  * The clearfix hack is a popular way to contain floats without resorting to using presentational markup.
  *
@@ -220,24 +222,80 @@ p:empty {
   height: 100%;
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+/*
+## Triangle
+* @include triangle within a pseudo element and add positioning properties (ie. top, left)
+* $direction: up, down, left, right
+*/
+
+/*
+* Currency
+*/
+
+.price {
+  position: relative;
 }
 
-.-flex {
-  display: flex;
+.price:before {
+  content: "$";
+  position: relative;
+  left: 0;
 }
 
-.no-scroll {
-  overflow: hidden;
-  height: 100%;
+.USD .price:before {
+  content: "$";
+}
+
+.EUR .price:before {
+  content: "\20AC";
+}
+
+.ILS .price:before {
+  content: "\20AA";
+}
+
+.GBP .price:before {
+  content: "\A3";
+}
+
+/*
+* Clearfix
+*/
+
+/*
+* Respond To
+*/
+
+/*
+* Animation
+*/
+
+/*
+* Alerted: creates a smooth, pulsing circle next to any element that the mixin is applied to.
+*/
+
+@-webkit-keyframes alertMe {
+  from {
+    border-width: 3px;
+    border-color: gold;
+  }
+
+  to {
+    border-width: 0;
+    border-color: rgba(255, 215, 0, 0.1);
+  }
+}
+
+@keyframes alertMe {
+  from {
+    border-width: 3px;
+    border-color: gold;
+  }
+
+  to {
+    border-width: 0;
+    border-color: rgba(255, 215, 0, 0.1);
+  }
 }
 
 /*
@@ -343,24 +401,80 @@ p {
   line-height: 1.45;
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
+/*
+## Triangle
+* @include triangle within a pseudo element and add positioning properties (ie. top, left)
+* $direction: up, down, left, right
+*/
+
+/*
+* Currency
+*/
+
+.price {
+  position: relative;
 }
 
-.-flex {
-  display: flex;
+.price:before {
+  content: "$";
+  position: relative;
+  left: 0;
 }
 
-.no-scroll {
-  overflow: hidden;
-  height: 100%;
+.USD .price:before {
+  content: "$";
+}
+
+.EUR .price:before {
+  content: "\20AC";
+}
+
+.ILS .price:before {
+  content: "\20AA";
+}
+
+.GBP .price:before {
+  content: "\A3";
+}
+
+/*
+* Clearfix
+*/
+
+/*
+* Respond To
+*/
+
+/*
+* Animation
+*/
+
+/*
+* Alerted: creates a smooth, pulsing circle next to any element that the mixin is applied to.
+*/
+
+@-webkit-keyframes alertMe {
+  from {
+    border-width: 3px;
+    border-color: gold;
+  }
+
+  to {
+    border-width: 0;
+    border-color: rgba(255, 215, 0, 0.1);
+  }
+}
+
+@keyframes alertMe {
+  from {
+    border-width: 3px;
+    border-color: gold;
+  }
+
+  to {
+    border-width: 0;
+    border-color: rgba(255, 215, 0, 0.1);
+  }
 }
 
 .article__h1 {
@@ -414,9 +528,41 @@ p {
 }
 
 .article__box-shadow {
+  position: relative;
   height: 200px;
   width: 200px;
   border-radius: 8px;
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
 }
+
+.article__box-shadow:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  height: 8px;
+  width: 8px;
+  border-radius: 10px;
+  background-color: gold;
+}
+
+.article__box-shadow:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: solid gold;
+  border-width: 2px;
+  box-sizing: border-box;
+  -webkit-animation: alertMe 1000ms infinite ease 0ms;
+  animation: alertMe 1000ms infinite ease 0ms;
+}
+
+/*
+* Using Price util
+*/
 

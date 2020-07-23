@@ -1,5 +1,5 @@
 <template>
-  <div class="article page">
+  <div class="article page USD">
     <h1 class="article__h1">H1 h1</h1>
     <h2 class="article__h2">H2 h2</h2>
     <h3 class="article__h3">H3 h3</h3>
@@ -13,6 +13,8 @@
       atque optio quos tempore.
     </div>
     <div class="article__caption">atque optio quos tempore.</div>
+    <div class="article__box-shadow"></div>
+    <span class="price">45</span>
   </div>
 </template>
 
