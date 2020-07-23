@@ -184,6 +184,14 @@ ul {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #a8dadc;
+  font-family: "Lato-Light", sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
 .-list-unstyled {
   padding-left: 0;
   list-style: none;

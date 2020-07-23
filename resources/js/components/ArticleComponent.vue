@@ -13,15 +13,16 @@
       reprehenderit nemo, atque optio quos tempore.
     </div>
     <div class="article__caption">atque optio quos tempore.</div>
-    <div class="article__box-shadow"></div>
-    <span class="price">45</span>
+    <a href="#">Link</a>
+    <!-- <div class="article__box-shadow"></div>
+    <span class="price">45</span>-->
   </div>
 </template>
 
 <script>
 export default {
   mounted() {
-    console.log("Component mounted.");
+    console.log("Article Component mounted.");
   },
 };
 </script>

@@ -1928,9 +1928,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    console.log("Component mounted.");
+    console.log("Article Component mounted.");
   }
 });
 
@@ -38203,9 +38204,7 @@ var staticRenderFns = [
         _vm._v("atque optio quos tempore.")
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "article__box-shadow" }),
-      _vm._v(" "),
-      _c("span", { staticClass: "price" }, [_vm._v("45")])
+      _c("a", { attrs: { href: "#" } }, [_vm._v("Link")])
     ])
   }
 ]

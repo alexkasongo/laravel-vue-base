@@ -30,6 +30,11 @@ ul {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    @include para($aqua-island);
+}
+
 .-list-unstyled {
     padding-left: 0;
     list-style: none;
