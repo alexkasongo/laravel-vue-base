@@ -35,12 +35,13 @@
     }
     &__para {
         @include para;
+        max-width: 350px;
     }
     &__caption {
         @include caption;
     }
     &__box-shadow {
-        position: relative;
+        position: y;
         @include alerted;
         height: 200px;
         width: 200px;

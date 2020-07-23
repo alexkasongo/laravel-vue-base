@@ -298,6 +298,10 @@ p:empty {
   }
 }
 
+.page {
+  padding: 50px;
+}
+
 /*
 * Mixins
 */
@@ -477,6 +481,10 @@ p {
   }
 }
 
+.page {
+  padding: 50px;
+}
+
 .article__h1 {
   color: #333;
   font-family: "Lato-Bold", sans-serif;
@@ -518,6 +526,7 @@ p {
   font-family: "Lato-Light", sans-serif;
   font-size: 16px;
   line-height: 1.45;
+  max-width: 350px;
 }
 
 .article__caption {
@@ -528,7 +537,7 @@ p {
 }
 
 .article__box-shadow {
-  position: relative;
+  position: y;
   height: 200px;
   width: 200px;
   border-radius: 8px;
