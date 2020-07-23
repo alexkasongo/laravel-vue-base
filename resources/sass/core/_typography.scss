@@ -43,7 +43,7 @@
     @media (min-width: $tablet) {
     }
 }
-@mixin caption($color: $silver, $family: $primary-font) {
+@mixin caption($color: $silver, $family: $Light-font) {
     color: $color;
     font-family: $family;
     font-size: 14px;
