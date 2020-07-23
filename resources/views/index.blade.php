@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Laravel Vue Base</title>
 
         {{-- styles --}}
         <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" >
