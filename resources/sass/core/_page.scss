@@ -1,65 +1,24 @@
 .page {
-    min-height: calc(100vh - 143px);
     @media (min-width: $tablet) {
-        min-height: calc(100vh - 135px);
     }
-    // this will wrap the content of the page boxing it in at 1200px on desktop;
+    @media (min-width: $desktop) {
+    }
     &__container {
-        position: relative;
-        margin: 0 auto;
-        padding: 6px;
-        width: 100%;
         @media (min-width: $tablet) {
-            max-width: 1200px;
         }
         @media (min-width: $desktop) {
-            padding: 0px;
-        }
-        // this will allow the content to be max width and not be contained.
-        // some pages will have a banner image at the top or a block that needs to be a full width colour.
-
-        &--margin-120 {
-            @media (min-width: $tablet) {
-                max-width: 1440px;
-                margin-right: 120px;
-                margin-left: 120px;
-            }
-        }
-        &--margin-90 {
-            margin-top: 90px;
-        }
-
-        &--full {
-            width: 100%;
-            padding: 0;
-            @media (min-width: $tablet) {
-                max-width: 100%;
-            }
-        }
-        &--small {
-            padding: 5px 15px;
-            @media (min-width: $tablet) {
-                max-width: 800px;
-            }
         }
     }
     &__banner {
-        width: 100%;
-        margin: 60px auto 15px auto;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 165px;
         @media (min-width: $tablet) {
-            height: 480px;
-            margin-bottom: 45px;
+        }
+        @media (min-width: $desktop) {
         }
     }
     &__title {
-        @include h2;
-        margin-bottom: 20px;
         @media (min-width: $tablet) {
-            margin-bottom: 30px;
+        }
+        @media (min-width: $desktop) {
         }
     }
 }
