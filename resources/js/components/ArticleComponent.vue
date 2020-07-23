@@ -1,5 +1,5 @@
 <template>
-  <div class="article">
+  <div class="article page">
     <h1 class="article__h1">H1 h1</h1>
     <h2 class="article__h2">H2 h2</h2>
     <h3 class="article__h3">H3 h3</h3>
