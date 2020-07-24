@@ -8,36 +8,32 @@
 @import "1-helpers/variables";
 
 /*
-* 2 - NORMALIZE
+* 2 - TOOLS
 */
-@import "2-normalize/import-now";
+@import "2-tools/util";
 
 /*
-* 3 - TOOLS
+* 3 - BASICS
 */
-@import "3-tools/util";
+@import "3-basics/reset.scss";
+@import "3-basics/fonts";
+@import "3-basics/typography";
+@import "3-basics/links";
 
 /*
-* 4 - BASICS
+* 4 - LAYOUT
 */
-@import "4-basics/fonts";
-@import "4-basics/typography";
-@import "4-basics/links";
+@import "4-layout/page";
 
 /*
-* 5 - LAYOUT
-*/
-@import "5-layout/page";
-
-/*
-* 6 - MODULES
+* 5 - MODULES
 */
 // @import "6-modules/";
 
 /*
-* 7 - COMPONENTS
+* 6 - COMPONENTS
 */
-@import "7-components/article";
+@import "6-components/article";
 
 // mixins
 @import "mixins/clearfix";
