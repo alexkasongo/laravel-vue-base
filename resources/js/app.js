@@ -20,8 +20,8 @@ window.Vue = require("vue");
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component(
-    "article-component",
-    require("./components/ArticleComponent.vue").default
+    "playground-component",
+    require("./components/Playground.vue").default
 );
 
 /**

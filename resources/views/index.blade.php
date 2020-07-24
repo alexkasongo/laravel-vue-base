@@ -26,7 +26,7 @@
             @endif
 
             <div class="content">
-                <article-component></article-component>
+                <playground-component></playground-component>
             </div>
         </div>
         <script src="js/app.js"></script>

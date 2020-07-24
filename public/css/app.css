@@ -583,19 +583,101 @@ p {
   font-size: 16px;
 }
 
-button {
-  border: none;
-}
+/*
+* BUTTON - MIXINS
+*/
+
+/*
+* BUTTON
+*/
 
 button::-moz-focus-inner {
   border: none;
 }
 
-input[type=reset]::-moz-focus-inner,
-input[type=button]::-moz-focus-inner,
-input[type=submit]::-moz-focus-inner,
-input[type=file] > input[type=button]::-moz-focus-inner {
-  border: none;
+/*
+* Placeholders - They're a pain as you have to set the style
+* in all the separate formats, this sorts it for you.
+*/
+
+* input,
+textarea {
+  color: #333;
+  font-family: "Lato-Light", sans-serif;
+  font-size: 16px;
+}
+
+* input.placeholder,
+textarea.placeholder {
+  color: #fff;
+  font-family: "Lato-Light", sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+* input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #fff;
+  font-family: "Lato-Light", sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+* input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #fff;
+  font-family: "Lato-Light", sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+* input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #fff;
+  font-family: "Lato-Light", sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+* input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #fff;
+  font-family: "Lato-Light", sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+input[type=email]:hover,
+input[type=number]:hover,
+input[type=password]:hover,
+input[type=search]:hover,
+input[type=tel]:hover,
+input[type=text]:hover,
+input[type=url]:hover,
+input[type=color]:hover,
+input[type=date]:hover,
+input[type=datetime]:hover,
+input[type=datetime-local]:hover,
+input[type=month]:hover,
+input[type=time]:hover,
+input[type=week]:hover,
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=text]:focus,
+input[type=url]:focus,
+input[type=color]:focus,
+input[type=date]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=month]:focus,
+input[type=time]:focus,
+input[type=week]:focus,
+textarea {
+  border-radius: 8px;
+  outline: none;
 }
 
 /*
@@ -703,10 +785,6 @@ p:empty {
   display: none;
 }
 
-*:focus {
-  outline: 1px solid #a8dadc;
-}
-
 .no-scroll {
   overflow: hidden;
   height: 100%;
@@ -766,6 +844,23 @@ p:empty {
 */
 
 /*
+* div::after {
+    @include pseudo;
+    top: -1rem; left: -1rem;
+    width: 1rem; height: 1rem;
+}
+*/
+
+/*
+* input,  
+textarea {  
+    @include input-placeholder {
+        color: $grey;
+    }
+}
+*/
+
+/*
 ## Triangle
 * @include triangle within a pseudo element and add positioning properties (ie. top, left)
 * $direction: up, down, left, right
@@ -811,18 +906,15 @@ p:empty {
   }
 }
 
-button {
-  border: none;
-}
+/*
+* BUTTON - MIXINS
+*/
+
+/*
+* BUTTON
+*/
 
 button::-moz-focus-inner {
-  border: none;
-}
-
-input[type=reset]::-moz-focus-inner,
-input[type=button]::-moz-focus-inner,
-input[type=submit]::-moz-focus-inner,
-input[type=file] > input[type=button]::-moz-focus-inner {
   border: none;
 }
 
@@ -890,44 +982,50 @@ p {
   height: 100vh;
 }
 
-.article__h1 {
+.playground {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.playground__h1 {
   color: #333;
   font-family: "Lato-Bold", sans-serif;
   font-size: 56px;
   background-color: salmon;
 }
 
-.article__h2 {
+.playground__h2 {
   color: #333;
   font-family: "Lato-Bold", sans-serif;
   font-size: 36px;
 }
 
-.article__h3 {
+.playground__h3 {
   color: #333;
   font-family: "Lato-Bold", sans-serif;
   font-size: 28px;
 }
 
-.article__h4 {
+.playground__h4 {
   color: #333;
   font-family: "Lato-Bold", sans-serif;
   font-size: 24px;
 }
 
-.article__h5 {
+.playground__h5 {
   color: #333;
   font-family: "Lato-Bold", sans-serif;
   font-size: 20px;
 }
 
-.article__h6 {
+.playground__h6 {
   color: #333;
   font-family: "Lato-Bold", sans-serif;
   font-size: 16px;
 }
 
-.article__para {
+.playground__para {
   color: #333;
   font-family: "Lato-Light", sans-serif;
   font-size: 16px;
@@ -935,14 +1033,14 @@ p {
   max-width: 350px;
 }
 
-.article__caption {
+.playground__caption {
   color: #6a737d;
   font-family: "Lato-Light", sans-serif;
   font-size: 14px;
   line-height: 1.45;
 }
 
-.article__box-shadow {
+.playground__box-shadow {
   position: relative;
   height: 200px;
   border-radius: 8px;
@@ -954,7 +1052,7 @@ p {
   margin: 10px 0 10px 0;
 }
 
-.article__box-shadow:before {
+.playground__box-shadow:before {
   content: "";
   position: absolute;
   top: 6px;
@@ -965,7 +1063,7 @@ p {
   background-color: gold;
 }
 
-.article__box-shadow:after {
+.playground__box-shadow:after {
   content: "";
   position: absolute;
   top: 0;
@@ -981,24 +1079,68 @@ p {
   animation: alertMe 1000ms infinite ease 0ms;
 }
 
-.article button {
+.playground input {
+  padding: 10px 18px;
+  border: none;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-radius: 8px;
+  border: solid 1px #f97363;
+  background-color: salmon;
+  background: -moz-linear-gradient(top, #fcbab2, salmon);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcbab2", endColorstr="salmon");
+  color: #fff2f1;
+}
+
+.playground input:hover {
+  background-color: #f96a59;
+  background: -moz-linear-gradient(top, #fcaca3, #f96a59);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcaca3", endColorstr="#f96a59");
+}
+
+.playground input:active {
+  background-color: #fcaca3;
+  background: -moz-linear-gradient(top, salmon, #fcaca3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="salmon", endColorstr="#fcaca3");
+  color: #fed9d5;
+}
+
+.playground button {
   display: inline-block;
   padding: 10px 20px;
   outline: none;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
+  border: none;
   border-radius: 8px;
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border: solid 1px #f97363;
+  background-color: salmon;
+  background: -moz-linear-gradient(top, #fcbab2, salmon);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcbab2", endColorstr="salmon");
+  color: #fff2f1;
 }
 
-.article button:hover {
+.playground button:hover {
   text-decoration: none;
 }
 
-.article button:active {
+.playground button:active {
   position: relative;
   top: 1px;
+}
+
+.playground button:hover {
+  background-color: #f96a59;
+  background: -moz-linear-gradient(top, #fcaca3, #f96a59);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcaca3", endColorstr="#f96a59");
+}
+
+.playground button:active {
+  background-color: #fcaca3;
+  background: -moz-linear-gradient(top, salmon, #fcaca3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="salmon", endColorstr="#fcaca3");
+  color: #fed9d5;
 }
 
 /*

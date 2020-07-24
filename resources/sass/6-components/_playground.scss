@@ -2,12 +2,16 @@
 * Importing here allows vue to read styles
 */
 @import "../1-helpers/variables";
+@import "../1-helpers/mixins";
 @import "../2-tools/util";
 @import "../3-basics/buttons";
 @import "../3-basics/typography";
 @import "../4-layout/page";
 
-.article {
+.playground {
+    width: 500px;
+    @include push--auto;
+
     &__h1 {
         @include h1;
         background-color: salmon;
@@ -43,8 +47,13 @@
         @include linear-gradient(rgb(250, 128, 114), rgb(173, 216, 230) 100%);
         margin: 10px 0 10px 0;
     }
+    input {
+        @include input;
+        @include color(salmon);
+    }
     button {
         @include button;
+        @include color(salmon);
     }
 }
 

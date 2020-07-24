@@ -51,13 +51,6 @@
     @media (min-width: $tablet) {
     }
 }
-// @mixin button($color: $primary-font-color, $family: $primary-font) {
-//     color: $color;
-//     font-family: $family;
-//     font-size: 14px;
-//     @media (min-width: $tablet) {
-//     }
-// }
 @mixin para($color: $primary-font-color, $family: $Light-font) {
     color: $color;
     font-family: $family;
@@ -70,6 +63,13 @@
     color: $color;
     font-family: $family;
     font-size: 14px;
+    @media (min-width: $tablet) {
+    }
+}
+@mixin text($color: $primary-font-color, $family: $Light-font) {
+    color: $color;
+    font-family: $family;
+    font-size: 16px;
     @media (min-width: $tablet) {
     }
 }
