@@ -609,6 +609,24 @@ template {
 * 4 - BASICS
 */
 
+@font-face {
+  font-family: "Lato-Light";
+  src: url(/fonts/Lato-Light.woff2?b20d8627394925037920ed24437e863c) format("woff2"), url(/fonts/Lato-Light.woff?6b337259c0ec1444e69c7f0f8627dbea) format("woff"), url(/fonts/Lato-Light.ttf?4c3b8b453f4a323970b8189f625fdeeb) format("ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url(/fonts/Lato-Regular.woff2?1031840a9580bcc9b1b83a047f2282b4) format("woff2"), url(/fonts/Lato-Regular.woff?d5a55f731ce58995f4a38e977365cdad) format("woff"), url(/fonts/Lato-Regular.ttf?a8e3367a36dba92795fb9a56d99a79cc) format("ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato-Bold";
+  src: url(/fonts/Lato-Bold.woff2?6e4d81ad84a5b423e2592ea45ddf2242) format("woff2"), url(/fonts/Lato-Bold.woff?66c976f659d1e370c5faeb860fc8d1ea) format("woff"), url(/fonts/Lato-Bold.ttf?eada2ed66365da06d761a04b9351903b) format("ttf");
+  font-style: normal;
+}
+
 /*
 *   Font mixins
 */
@@ -664,7 +682,7 @@ p {
 }
 
 .h6 {
-  color: #dddddd;
+  color: #6a737d;
   font-family: "Lato-Light", sans-serif;
   font-size: 14px;
   line-height: 1.45;
@@ -790,7 +808,7 @@ p {
 }
 
 .h6 {
-  color: #dddddd;
+  color: #6a737d;
   font-family: "Lato-Light", sans-serif;
   font-size: 14px;
   line-height: 1.45;
@@ -850,6 +868,7 @@ p {
   color: #333;
   font-family: "Lato-Bold", sans-serif;
   font-size: 56px;
+  background-color: salmon;
 }
 
 .article__h2 {
@@ -891,7 +910,7 @@ p {
 }
 
 .article__caption {
-  color: #dddddd;
+  color: #6a737d;
   font-family: "Lato-Light", sans-serif;
   font-size: 14px;
   line-height: 1.45;
