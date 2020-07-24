@@ -1,14 +1,50 @@
+/*
+* This is the single file output by sass. It is intended to only @import other files.
+*/
+
+/*
+* 1 - NORMALIZE
+*/
+@import "1-normalize/import-now";
+
+/*
+* 1 - HELPERS
+*/
+@import "2-helpers/variables";
+
+/*
+* 2 - TOOLS
+*/
+// @import "3-tools/";
+
+/*
+* 3 - BASICS
+*/
+// @import "4-basics/";
+
+/*
+* 4 - LAYOUT
+*/
+// @import "5-layout/";
+
+/*
+* 5 - MODULES
+*/
+// @import "6-modules/";
+
+/*
+* 6 - COMPONENTS
+*/
+@import "7-components/article";
+
 // mixins
 @import "mixins/clearfix";
-@import "mixins/flexbox";
+@import "2-helpers/flexbox";
 
 // Core
-@import "core/fonts";
-@import "core/variables";
-@import "core/typography";
-@import "core/global";
-@import "core/util";
-@import "core/page";
-
-// Components
-@import "components/article";
+// @import "core/fonts";
+// @import "core/variables";
+// @import "core/typography";
+// @import "core/global";
+// @import "core/util";
+// @import "core/page";

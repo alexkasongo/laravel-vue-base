@@ -1,20 +1,16 @@
 /*
 * Mixins
 */
-@import "../mixins/flexbox";
+// @import "../2-helpers/flexbox";
 /*
 * Mixins
 */
-@import "../core/variables";
+@import "../2-helpers/variables";
 @import "../core/typography";
 @import "../core/util";
 @import "../core/page";
 
 .article {
-    // padding: 20px;
-    // margin: auto;
-    // max-width: 500px;
-
     &__h1 {
         @include h1;
     }
@@ -53,6 +49,6 @@
 /*
 * Using Price util
 */
-.price {
-    @extend %currency;
-}
+// .price {
+//     @extend %currency;
+// }

@@ -28,5 +28,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../sass/components/_article.scss";
+@import "../../sass/7-components/_article.scss";
 </style>
