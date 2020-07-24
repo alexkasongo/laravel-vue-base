@@ -37559,7 +37559,9 @@ var staticRenderFns = [
         _vm._v("atque optio quos tempore.")
       ]),
       _vm._v(" "),
-      _c("a", { attrs: { href: "#" } }, [_vm._v("Link")])
+      _c("a", { attrs: { href: "#" } }, [_vm._v("Link")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "article__box-shadow" })
     ])
   }
 ]

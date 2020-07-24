@@ -43,74 +43,6 @@
 * 2 - TOOLS
 */
 
-/*
-## Triangle
-* @include triangle within a pseudo element and add positioning properties (ie. top, left)
-* $direction: up, down, left, right
-*/
-
-/*
-* Currency
-*/
-
-/*
-* Clearfix
-*/
-
-/*
-* Respond To
-*/
-
-/*
-* Animation
-*/
-
-/*
-* Alerted: creates a smooth, pulsing circle next to any element that the mixin is applied to.
-*/
-
-@-webkit-keyframes alertMe {
-  from {
-    border-width: 3px;
-    border-color: gold;
-  }
-
-  to {
-    border-width: 0;
-    border-color: rgba(255, 215, 0, 0.1);
-  }
-}
-
-@keyframes alertMe {
-  from {
-    border-width: 3px;
-    border-color: gold;
-  }
-
-  to {
-    border-width: 0;
-    border-color: rgba(255, 215, 0, 0.1);
-  }
-}
-
-/** 
- * The clearfix hack is a popular way to contain floats without resorting to using presentational markup.
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- *  
- *  Source: http://nicolasgallagher.com/micro-clearfix-hack/
- */
-
-/*
-* 3 - BASICS
-*/
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -492,6 +424,70 @@ template {
   display: none;
 }
 
+/*
+## Triangle
+* @include triangle within a pseudo element and add positioning properties (ie. top, left)
+* $direction: up, down, left, right
+*/
+
+/*
+* Currency
+*/
+
+/*
+* Respond To
+*/
+
+/*
+* Animation
+*/
+
+/*
+* Alerted: creates a smooth, pulsing circle next to any element that the mixin is applied to.
+*/
+
+@-webkit-keyframes alertMe {
+  from {
+    border-width: 3px;
+    border-color: gold;
+  }
+
+  to {
+    border-width: 0;
+    border-color: rgba(255, 215, 0, 0.1);
+  }
+}
+
+@keyframes alertMe {
+  from {
+    border-width: 3px;
+    border-color: gold;
+  }
+
+  to {
+    border-width: 0;
+    border-color: rgba(255, 215, 0, 0.1);
+  }
+}
+
+/** 
+ * The clearfix hack is a popular way to contain floats without resorting to using presentational markup.
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ *  
+ *  Source: http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+
+/*
+* 3 - BASICS
+*/
+
 @font-face {
   font-family: "Lato-Light";
   src: url(/fonts/Lato-Light.woff2?b20d8627394925037920ed24437e863c) format("woff2"), url(/fonts/Lato-Light.woff?6b337259c0ec1444e69c7f0f8627dbea) format("woff"), url(/fonts/Lato-Light.ttf?4c3b8b453f4a323970b8189f625fdeeb) format("ttf");
@@ -597,6 +593,7 @@ body {
   font-family: "Lato-Regular", sans-serif;
   min-height: 100%;
   overflow-x: hidden;
+  -o-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -741,10 +738,6 @@ p:empty {
 
 /*
 * Currency
-*/
-
-/*
-* Clearfix
 */
 
 /*
@@ -897,11 +890,14 @@ p {
 }
 
 .article__box-shadow {
-  position: y;
+  position: relative;
   height: 200px;
-  width: 200px;
   border-radius: 8px;
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  background-color: salmon;
+  /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image: linear-gradient(to right, salmon, lightblue 100%);
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
 }
 
 .article__box-shadow:before {

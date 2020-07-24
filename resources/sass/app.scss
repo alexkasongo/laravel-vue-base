@@ -6,18 +6,19 @@
 * 1 - HELPERS
 */
 @import "1-helpers/variables";
+@import "1-helpers/mixins";
 @import "1-helpers/flexbox-mixin";
 
 /*
 * 2 - TOOLS
 */
+@import "2-tools/normalize";
 @import "2-tools/util";
 @import "2-tools/clearfix";
 
 /*
 * 3 - BASICS
 */
-@import "3-basics/reset.scss";
 @import "3-basics/fonts";
 @import "3-basics/typography";
 @import "3-basics/links";

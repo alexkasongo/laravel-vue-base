@@ -34,12 +34,12 @@
         @include caption;
     }
     &__box-shadow {
-        position: y;
+        position: relative;
         @include alerted;
         height: 200px;
-        width: 200px;
         border-radius: 8px;
         box-shadow: $box-shadow;
+        @include linear-gradient(rgb(250, 128, 114), rgb(173, 216, 230) 100%);
     }
 }
 

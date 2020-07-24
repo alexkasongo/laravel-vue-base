@@ -53,19 +53,6 @@
 }
 
 /*
-* Clearfix
-*/
-%clearfix {
-    *zoom: 1;
-    &:after {
-        content: "";
-        display: table;
-        line-height: 0;
-        clear: both;
-    }
-}
-
-/*
 * Respond To
 */
 // Breakpoints for each query
