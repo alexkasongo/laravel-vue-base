@@ -3,43 +3,44 @@
 */
 
 /*
-* 1 - NORMALIZE
-*/
-@import "1-normalize/import-now";
-
-/*
 * 1 - HELPERS
 */
-@import "2-helpers/variables";
+@import "1-helpers/variables";
 
 /*
-* 2 - TOOLS
+* 2 - NORMALIZE
 */
-// @import "3-tools/";
+@import "2-normalize/import-now";
 
 /*
-* 3 - BASICS
+* 3 - TOOLS
 */
-// @import "4-basics/";
+@import "3-tools/util";
 
 /*
-* 4 - LAYOUT
+* 4 - BASICS
+*/
+@import "4-basics/typography";
+@import "4-basics/links";
+
+/*
+* 5 - LAYOUT
 */
 // @import "5-layout/";
 
 /*
-* 5 - MODULES
+* 6 - MODULES
 */
 // @import "6-modules/";
 
 /*
-* 6 - COMPONENTS
+* 7 - COMPONENTS
 */
 @import "7-components/article";
 
 // mixins
 @import "mixins/clearfix";
-@import "2-helpers/flexbox";
+@import "1-helpers/flexbox-mixin";
 
 // Core
 // @import "core/fonts";

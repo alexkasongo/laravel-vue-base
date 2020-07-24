@@ -3,7 +3,44 @@
 */
 
 /*
-* 1 - NORMALIZE
+* 1 - HELPERS
+*/
+
+/*
+* Color Variables
+* Using http://chir.ag/projects/name-that-color/#6195ED for color names
+*/
+
+/*
+* Fonts
+*/
+
+/*
+* Fonts
+*/
+
+/*
+* Primary and Secondary Font Colours
+*/
+
+/*
+* Body Color
+*/
+
+/*
+* Box shadow
+*/
+
+/*
+* Break points
+*/
+
+/*
+* Z-index
+*/
+
+/*
+* 2 - NORMALIZE
 */
 
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
@@ -515,60 +552,146 @@ template {
 }
 
 /*
-* 1 - HELPERS
+* 3 - TOOLS
 */
 
 /*
-* Color Variables
-* Using http://chir.ag/projects/name-that-color/#6195ED for color names
+## Triangle
+* @include triangle within a pseudo element and add positioning properties (ie. top, left)
+* $direction: up, down, left, right
 */
 
 /*
-* Fonts
+* Currency
 */
 
 /*
-* Fonts
+* Clearfix
 */
 
 /*
-* Primary and Secondary Font Colours
+* Respond To
 */
 
 /*
-* Body Color
+* Animation
 */
 
 /*
-* Box shadow
+* Alerted: creates a smooth, pulsing circle next to any element that the mixin is applied to.
+*/
+
+@-webkit-keyframes alertMe {
+  from {
+    border-width: 3px;
+    border-color: gold;
+  }
+
+  to {
+    border-width: 0;
+    border-color: rgba(255, 215, 0, 0.1);
+  }
+}
+
+@keyframes alertMe {
+  from {
+    border-width: 3px;
+    border-color: gold;
+  }
+
+  to {
+    border-width: 0;
+    border-color: rgba(255, 215, 0, 0.1);
+  }
+}
+
+/*
+* 4 - BASICS
 */
 
 /*
-* Break points
+*   Font mixins
 */
 
 /*
-* Z-index
+* Shared styling
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  color: #333;
+  font-family: "Lato-Light", sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.h1 {
+  color: #333;
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 56px;
+}
+
+.h2 {
+  color: #333;
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 36px;
+}
+
+.h3 {
+  color: #333;
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 28px;
+}
+
+.h4 {
+  color: #333;
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 24px;
+}
+
+.h5 {
+  color: #333;
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 14px;
+}
+
+.h6 {
+  color: #dddddd;
+  font-family: "Lato-Light", sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+/*
+* LINKS
+*/
+
+a {
+  text-decoration: none;
+  color: #a8dadc;
+  font-family: "Lato-Light", sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+/*
+* 5 - LAYOUT
 */
 
 /*
-* 2 - TOOLS
+* 6 - MODULES
 */
 
 /*
-* 3 - BASICS
-*/
-
-/*
-* 4 - LAYOUT
-*/
-
-/*
-* 5 - MODULES
-*/
-
-/*
-* 6 - COMPONENTS
+* 7 - COMPONENTS
 */
 
 /*

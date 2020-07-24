@@ -5,10 +5,10 @@
 /*
 * Mixins
 */
-@import "../2-helpers/variables";
-@import "../core/typography";
-@import "../core/util";
-@import "../core/page";
+@import "../1-helpers/variables";
+@import "../4-basics/typography";
+@import "../3-tools/util";
+@import "../5-layout/page";
 
 .article {
     &__h1 {
