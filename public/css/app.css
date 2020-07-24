@@ -40,6 +40,23 @@
 */
 
 /*
+* div::after {
+    @include pseudo;
+    top: -1rem; left: -1rem;
+    width: 1rem; height: 1rem;
+}
+*/
+
+/*
+* input,  
+textarea {  
+    @include input-placeholder {
+        color: $grey;
+    }
+}
+*/
+
+/*
 * 2 - TOOLS
 */
 
@@ -556,15 +573,29 @@ p {
 
 .h5 {
   color: #333;
-  font-family: "Lato-Regular", sans-serif;
-  font-size: 14px;
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 20px;
 }
 
 .h6 {
-  color: #6a737d;
-  font-family: "Lato-Light", sans-serif;
-  font-size: 14px;
-  line-height: 1.45;
+  color: #333;
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 16px;
+}
+
+button {
+  border: none;
+}
+
+button::-moz-focus-inner {
+  border: none;
+}
+
+input[type=reset]::-moz-focus-inner,
+input[type=button]::-moz-focus-inner,
+input[type=submit]::-moz-focus-inner,
+input[type=file] > input[type=button]::-moz-focus-inner {
+  border: none;
 }
 
 /*
@@ -685,6 +716,10 @@ p:empty {
 * 4 - LAYOUT
 */
 
+.page {
+  height: 100vh;
+}
+
 /*
 * 5 - MODULES
 */
@@ -776,6 +811,21 @@ p:empty {
   }
 }
 
+button {
+  border: none;
+}
+
+button::-moz-focus-inner {
+  border: none;
+}
+
+input[type=reset]::-moz-focus-inner,
+input[type=button]::-moz-focus-inner,
+input[type=submit]::-moz-focus-inner,
+input[type=file] > input[type=button]::-moz-focus-inner {
+  border: none;
+}
+
 /*
 *   Font mixins
 */
@@ -826,15 +876,18 @@ p {
 
 .h5 {
   color: #333;
-  font-family: "Lato-Regular", sans-serif;
-  font-size: 14px;
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 20px;
 }
 
 .h6 {
-  color: #6a737d;
-  font-family: "Lato-Light", sans-serif;
-  font-size: 14px;
-  line-height: 1.45;
+  color: #333;
+  font-family: "Lato-Bold", sans-serif;
+  font-size: 16px;
+}
+
+.page {
+  height: 100vh;
 }
 
 .article__h1 {
@@ -898,6 +951,7 @@ p {
   /* Chrome 10-25, iOS 5+, Safari 5.1+ */
   background-image: linear-gradient(to right, salmon, lightblue 100%);
   /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+  margin: 10px 0 10px 0;
 }
 
 .article__box-shadow:before {
@@ -925,6 +979,26 @@ p {
   box-sizing: border-box;
   -webkit-animation: alertMe 1000ms infinite ease 0ms;
   animation: alertMe 1000ms infinite ease 0ms;
+}
+
+.article button {
+  display: inline-block;
+  padding: 10px 20px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.article button:hover {
+  text-decoration: none;
+}
+
+.article button:active {
+  position: relative;
+  top: 1px;
 }
 
 /*

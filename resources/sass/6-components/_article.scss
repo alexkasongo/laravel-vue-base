@@ -3,6 +3,7 @@
 */
 @import "../1-helpers/variables";
 @import "../2-tools/util";
+@import "../3-basics/buttons";
 @import "../3-basics/typography";
 @import "../4-layout/page";
 
@@ -40,6 +41,10 @@
         border-radius: 8px;
         box-shadow: $box-shadow;
         @include linear-gradient(rgb(250, 128, 114), rgb(173, 216, 230) 100%);
+        margin: 10px 0 10px 0;
+    }
+    button {
+        @include button;
     }
 }
 

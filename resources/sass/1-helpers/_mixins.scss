@@ -89,3 +89,75 @@
     -o-box-sizing: $arguments;
     box-sizing: $arguments;
 }
+
+//============================================================
+// Push auto - quickly centre a block element without
+// having to worry about if there is any top or bottom
+// margin already applied.
+//============================================================
+
+@mixin push--auto {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
+//============================================================
+// Pseudo - When using ::before and ::after you'll always
+// need these three, so we're saving two lines of code every
+// time you use this.
+/*
+* div::after {
+    @include pseudo;
+    top: -1rem; left: -1rem;
+    width: 1rem; height: 1rem;
+}
+*/
+//============================================================
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+//============================================================
+// Placeholders - They're a pain as you have to set the style
+// in all the separate formats, this sorts it for you.
+/*
+* input,  
+textarea {  
+    @include input-placeholder {
+        color: $grey;
+    }
+}
+*/
+//============================================================
+@mixin input-placeholder {
+    &.placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+    &::-webkit-input-placeholder {
+        @content;
+    }
+}
+
+//============================================================
+// Truncate
+//============================================================
+@mixin truncate($truncation-boundary) {
+    max-width: $truncation-boundary;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

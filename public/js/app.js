@@ -1929,6 +1929,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log("Article Component mounted.");
@@ -37561,7 +37563,11 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("a", { attrs: { href: "#" } }, [_vm._v("Link")]),
       _vm._v(" "),
-      _c("div", { staticClass: "article__box-shadow" })
+      _c("div", { staticClass: "article__box-shadow" }),
+      _vm._v(" "),
+      _c("input", { attrs: { type: "file", placeholder: "input" } }),
+      _vm._v(" "),
+      _c("button", { attrs: { type: "submit" } }, [_vm._v("Click")])
     ])
   }
 ]

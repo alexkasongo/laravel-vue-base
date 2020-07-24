@@ -51,13 +51,13 @@
     @media (min-width: $tablet) {
     }
 }
-@mixin button($color: $primary-font-color, $family: $primary-font) {
-    color: $color;
-    font-family: $family;
-    font-size: 14px;
-    @media (min-width: $tablet) {
-    }
-}
+// @mixin button($color: $primary-font-color, $family: $primary-font) {
+//     color: $color;
+//     font-family: $family;
+//     font-size: 14px;
+//     @media (min-width: $tablet) {
+//     }
+// }
 @mixin para($color: $primary-font-color, $family: $Light-font) {
     color: $color;
     font-family: $family;
@@ -102,8 +102,8 @@ p {
     @include h4();
 }
 .h5 {
-    @include button();
+    @include h5();
 }
 .h6 {
-    @include caption();
+    @include h6();
 }

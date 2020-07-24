@@ -15,6 +15,8 @@
     <div class="article__caption">atque optio quos tempore.</div>
     <a href="#">Link</a>
     <div class="article__box-shadow"></div>
+    <input type="file" placeholder="input" />
+    <button type="submit">Click</button>
     <!-- <span class="price">45</span> -->
   </div>
 </template>
@@ -26,5 +28,4 @@ export default {
   },
 };
 </script>
-
 
