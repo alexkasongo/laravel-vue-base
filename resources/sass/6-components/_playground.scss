@@ -39,7 +39,7 @@
         @include caption;
     }
     &__box-shadow {
-        position: relative;
+        @include relative;
         @include alerted;
         height: 200px;
         border-radius: 8px;

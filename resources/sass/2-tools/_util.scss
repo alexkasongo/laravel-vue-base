@@ -134,9 +134,7 @@ $largeScreen: 1400px;
 @mixin alerted() {
     &:before {
         content: "";
-        position: absolute;
-        top: 6px;
-        right: 6px;
+        @include absolute(top 6px right 6px);
         height: 8px;
         width: 8px;
         border-radius: 10px;
@@ -144,9 +142,7 @@ $largeScreen: 1400px;
     }
     &:after {
         content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
+        @include absolute(top 0 right 0);
         height: 20px;
         width: 20px;
         border-radius: 20px;

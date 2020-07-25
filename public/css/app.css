@@ -57,6 +57,25 @@ textarea {
 */
 
 /*
+.menu li {
+@include relative;
+}
+.sub-menu {
+@include absolute(top 100% left 0);
+}
+.sticky-bar {
+@include fixed(top 0 left 0);
+}
+*/
+
+/*
+.logo {
+background-image: url("img/logo.png");
+@include retina("img/logo@2x.png", 100px, 21px);
+}
+*/
+
+/*
 * 2 - TOOLS
 */
 
@@ -870,6 +889,25 @@ textarea {
 */
 
 /*
+.menu li {
+@include relative;
+}
+.sub-menu {
+@include absolute(top 100% left 0);
+}
+.sticky-bar {
+@include fixed(top 0 left 0);
+}
+*/
+
+/*
+.logo {
+background-image: url("img/logo.png");
+@include retina("img/logo@2x.png", 100px, 21px);
+}
+*/
+
+/*
 ## Triangle
 * @include triangle within a pseudo element and add positioning properties (ie. top, left)
 * $direction: up, down, left, right
@@ -1063,9 +1101,9 @@ p {
 
 .playground__box-shadow:before {
   content: "";
-  position: absolute;
   top: 6px;
   right: 6px;
+  position: absolute;
   height: 8px;
   width: 8px;
   border-radius: 10px;
@@ -1074,9 +1112,9 @@ p {
 
 .playground__box-shadow:after {
   content: "";
-  position: absolute;
   top: 0;
   right: 0;
+  position: absolute;
   height: 20px;
   width: 20px;
   border-radius: 20px;
