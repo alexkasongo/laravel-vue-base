@@ -5,3 +5,12 @@ a {
     text-decoration: none;
     @include para($aqua-island);
 }
+
+a:focus {
+    outline: none;
+}
+
+a:active {
+    position: relative;
+    top: 1px;
+}

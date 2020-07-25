@@ -692,6 +692,15 @@ a {
   line-height: 1.45;
 }
 
+a:focus {
+  outline: none;
+}
+
+a:active {
+  position: relative;
+  top: 1px;
+}
+
 /*
 * css global reset settings
 */
