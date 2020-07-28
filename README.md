@@ -28,6 +28,19 @@ composer install
 npm install
 ```
 
+4. Create .env file. Copy all content in .env.example file and paste in .env file
+5. Run command to generate app key
+
+```
+php artisan key:generate
+```
+
+6. Run Development. For hot reloads run the watch command
+
+```
+npm run dev || npm run watch
+```
+
 4. If you're using Homestead (recommended)
 
 -   update Homestead.yaml by adding path to your project.
