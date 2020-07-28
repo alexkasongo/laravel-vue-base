@@ -41,11 +41,11 @@ php artisan key:generate
 npm run dev || npm run watch
 ```
 
-4. If you're using Homestead (recommended)
+7. If you're using Homestead (recommended)
 
 -   update Homestead.yaml by adding path to your project.
 
-5. Run
+8. Run
 
 ```
 sudo vim /etc/hosts
