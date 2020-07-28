@@ -6,7 +6,7 @@
 
 # Laravel Vue Base
 
-A Laravel Vue SPA starter project template.
+A Laravel Vue SPA starter project template. I recommend using the Homestead environment for maximum coding ease and pleasure.
 
 ## How To Install cloned repo
 
