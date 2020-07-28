@@ -8,6 +8,33 @@
 
 A Laravel Vue SPA starter project template.
 
+## How To Install cloned repo
+
+1. git clone <Repo> <DestinationDirectoryName>
+2. Run
+
+```
+composer install
+```
+
+3. Run
+
+```
+npm install
+```
+
+4. If you're using Homestead (recommended)
+
+-   update Homestead.yaml by adding path to your project.
+
+5. Run
+
+```
+sudo vim /etc/hosts
+```
+
+-   add your site to the list and save
+
 ## How To Install Vue Scaffolding
 
 To install Vue scaffolding on your project, you must have laravel/ui package installed on your laravel project.
