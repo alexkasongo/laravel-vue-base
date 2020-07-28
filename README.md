@@ -10,7 +10,12 @@ A Laravel Vue SPA starter project template.
 
 ## How To Install cloned repo
 
-1. git clone <Repo> <DestinationDirectoryName>
+1. Clone
+
+```
+git clone <Repo> <DestinationDirectoryName>
+```
+
 2. Run
 
 ```
