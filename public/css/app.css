@@ -843,10 +843,6 @@ body .cf {
   width: 1px;
 }
 
-p:empty {
-  display: none;
-}
-
 .no-scroll {
   overflow: hidden;
   height: 100%;
