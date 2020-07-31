@@ -579,6 +579,10 @@ h6 {
   margin: 0;
 }
 
+p:empty {
+  display: none;
+}
+
 p {
   color: #3b3b3b;
   font-family: "Lato-Light", sans-serif;
@@ -735,7 +739,7 @@ textarea {
 
 a {
   text-decoration: none;
-  color: #e63946;
+  color: #8efe11;
   font-family: "Lato-Light", sans-serif;
   font-size: 16px;
   line-height: 1.45;
@@ -748,6 +752,26 @@ a:focus {
 a:active {
   position: relative;
   top: 1px;
+}
+
+/*
+* global list styling
+*/
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.-list-unstyled {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.-list-unstyled li:before {
+  display: none;
 }
 
 /*
@@ -800,25 +824,13 @@ body .cf {
   outline-width: thin;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.-list-unstyled {
-  padding-left: 0;
-  list-style: none;
-  margin: 0;
-}
-
-.-list-unstyled li:before {
-  display: none;
-}
-
 .-bold {
   font-weight: bold;
 }
+
+/*
+* screen reader only
+*/
 
 .sr-only {
   border: 0;
@@ -1024,6 +1036,10 @@ h6 {
   margin: 0;
 }
 
+p:empty {
+  display: none;
+}
+
 p {
   color: #3b3b3b;
   font-family: "Lato-Light", sans-serif;
@@ -1099,6 +1115,10 @@ p {
   height: 60px;
 }
 
+.playground__typography {
+  margin: 0 0 0 5px;
+}
+
 .playground__h1 {
   color: #3b3b3b;
   font-family: "Lato-Bold", sans-serif;
@@ -1148,6 +1168,11 @@ p {
   font-family: "Lato-Light", sans-serif;
   font-size: 14px;
   line-height: 1.45;
+  margin: 0 0 0 5px;
+}
+
+.playground__link {
+  margin: 0 0 0 5px;
 }
 
 .playground__box-shadow {
@@ -1305,7 +1330,7 @@ p {
 }
 
 .playground__ul {
-  margin: 0 0 10px 0;
+  margin: 0 0 10px 5px;
 }
 
 /*

@@ -1968,6 +1968,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "playground-component",
   mounted: function mounted() {
@@ -37582,22 +37584,24 @@ var staticRenderFns = [
           _vm._v("Typography")
         ]),
         _vm._v(" "),
-        _c("h1", { staticClass: "playground__h1" }, [_vm._v("H1 h1")]),
-        _vm._v(" "),
-        _c("h2", { staticClass: "playground__h2" }, [_vm._v("H2 h2")]),
-        _vm._v(" "),
-        _c("h3", { staticClass: "playground__h3" }, [_vm._v("H3 h3")]),
-        _vm._v(" "),
-        _c("h4", { staticClass: "playground__h4" }, [_vm._v("H4 h4")]),
-        _vm._v(" "),
-        _c("h5", { staticClass: "playground__h5" }, [_vm._v("H5 h5")]),
-        _vm._v(" "),
-        _c("h6", { staticClass: "playground__h6" }, [_vm._v("H6 h6")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "playground__para" }, [
-          _vm._v(
-            "\n      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis\n      minus sint voluptatem assumenda quae fugit aspernatur sunt\n      distinctio corrupti maxime veritatis, rem, aliquid obcaecati\n      reprehenderit nemo, atque optio quos tempore.\n    "
-          )
+        _c("div", { staticClass: "playground__typography" }, [
+          _c("h1", { staticClass: "playground__h1" }, [_vm._v("H1 h1")]),
+          _vm._v(" "),
+          _c("h2", { staticClass: "playground__h2" }, [_vm._v("H2 h2")]),
+          _vm._v(" "),
+          _c("h3", { staticClass: "playground__h3" }, [_vm._v("H3 h3")]),
+          _vm._v(" "),
+          _c("h4", { staticClass: "playground__h4" }, [_vm._v("H4 h4")]),
+          _vm._v(" "),
+          _c("h5", { staticClass: "playground__h5" }, [_vm._v("H5 h5")]),
+          _vm._v(" "),
+          _c("h6", { staticClass: "playground__h6" }, [_vm._v("H6 h6")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "playground__para" }, [
+            _vm._v(
+              "\n        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis\n        minus sint voluptatem assumenda quae fugit aspernatur sunt\n        distinctio corrupti maxime veritatis, rem, aliquid obcaecati\n        reprehenderit nemo, atque optio quos tempore.\n      "
+            )
+          ])
         ])
       ]),
       _vm._v(" "),
@@ -37612,7 +37616,9 @@ var staticRenderFns = [
       _c("div", { staticClass: "playground__box-3 playground__box" }, [
         _c("div", { staticClass: "playground__heading" }, [_vm._v("Links")]),
         _vm._v(" "),
-        _c("a", { attrs: { href: "#" } }, [_vm._v("Link")])
+        _c("a", { staticClass: "playground__link", attrs: { href: "#" } }, [
+          _vm._v("Link")
+        ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "playground__box-4 playground__box" }, [

@@ -30,6 +30,9 @@
         padding: 0 0 0 5px;
         height: 60px;
     }
+    &__typography {
+        margin: 0 0 0 5px;
+    }
     &__h1 {
         @include h1;
     }
@@ -54,6 +57,10 @@
     }
     &__caption {
         @include caption;
+        margin: 0 0 0 5px;
+    }
+    &__link {
+        margin: 0 0 0 5px;
     }
     &__box-shadow {
         @include relative;
@@ -84,7 +91,7 @@
         margin-bottom: 10px;
     }
     &__ul {
-        margin: 0 0 10px 0;
+        margin: 0 0 10px 5px;
     }
 }
 
