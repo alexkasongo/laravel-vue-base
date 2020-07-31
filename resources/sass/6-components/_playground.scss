@@ -59,10 +59,18 @@
         @include input;
         @include color($chartreuse);
     }
-    button {
+    &__btn {
         @include button;
         @include color($chartreuse);
         margin-bottom: 10px;
+    }
+    &__btn-shadow {
+        @include button-shadow;
+        @include color($chartreuse);
+        margin-bottom: 10px;
+    }
+    &__ul {
+        margin: 0 0 10px 0;
     }
 }
 

@@ -19,9 +19,6 @@
     <a href="#">Link</a>
     <div class="playground__heading">Box Shadow</div>
     <div class="playground__box-shadow"></div>
-    <input type="text" placeholder="placeholder text" />
-    <div class="playground__heading">Inputs + Buttons</div>
-    <button>Click</button>
     <div class="playground__heading">Lists</div>
     <ul class="playground__ul">
       <li>
@@ -37,6 +34,10 @@
         <a href="#" class="playground__a">List 4</a>
       </li>
     </ul>
+    <input type="text" placeholder="placeholder text" />
+    <div class="playground__heading">Inputs + Buttons</div>
+    <button class="playground__btn">Click</button>
+    <button class="playground__btn-shadow">Click</button>
   </div>
 </template>
 
