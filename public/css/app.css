@@ -96,6 +96,34 @@ background-image: url("img/logo.png");
 */
 
 /*
+* useful helper classes 
+*/
+
+.-bold {
+  font-weight: bold;
+}
+
+/*
+* screen reader only
+*/
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+/*
 * 2 - TOOLS
 */
 
@@ -822,30 +850,6 @@ body .cf {
   outline-color: grey;
   outline-style: solid;
   outline-width: thin;
-}
-
-.-bold {
-  font-weight: bold;
-}
-
-/*
-* screen reader only
-*/
-
-.sr-only {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.no-scroll {
-  overflow: hidden;
-  height: 100%;
 }
 
 /*
