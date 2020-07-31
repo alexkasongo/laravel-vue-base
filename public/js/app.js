@@ -1951,6 +1951,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "playground-component",
   mounted: function mounted() {
@@ -37560,77 +37577,97 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "playground page USD" }, [
-      _c("div", { staticClass: "playground__heading" }, [_vm._v("Typography")]),
-      _vm._v(" "),
-      _c("h1", { staticClass: "playground__h1" }, [_vm._v("H1 h1")]),
-      _vm._v(" "),
-      _c("h2", { staticClass: "playground__h2" }, [_vm._v("H2 h2")]),
-      _vm._v(" "),
-      _c("h3", { staticClass: "playground__h3" }, [_vm._v("H3 h3")]),
-      _vm._v(" "),
-      _c("h4", { staticClass: "playground__h4" }, [_vm._v("H4 h4")]),
-      _vm._v(" "),
-      _c("h5", { staticClass: "playground__h5" }, [_vm._v("H5 h5")]),
-      _vm._v(" "),
-      _c("h6", { staticClass: "playground__h6" }, [_vm._v("H6 h6")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "playground__para" }, [
-        _vm._v(
-          "\n    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis\n    minus sint voluptatem assumenda quae fugit aspernatur sunt\n    distinctio corrupti maxime veritatis, rem, aliquid obcaecati\n    reprehenderit nemo, atque optio quos tempore.\n  "
-        )
+      _c("div", { staticClass: "playground__box-1 playground__box" }, [
+        _c("div", { staticClass: "playground__heading" }, [
+          _vm._v("Typography")
+        ]),
+        _vm._v(" "),
+        _c("h1", { staticClass: "playground__h1" }, [_vm._v("H1 h1")]),
+        _vm._v(" "),
+        _c("h2", { staticClass: "playground__h2" }, [_vm._v("H2 h2")]),
+        _vm._v(" "),
+        _c("h3", { staticClass: "playground__h3" }, [_vm._v("H3 h3")]),
+        _vm._v(" "),
+        _c("h4", { staticClass: "playground__h4" }, [_vm._v("H4 h4")]),
+        _vm._v(" "),
+        _c("h5", { staticClass: "playground__h5" }, [_vm._v("H5 h5")]),
+        _vm._v(" "),
+        _c("h6", { staticClass: "playground__h6" }, [_vm._v("H6 h6")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "playground__para" }, [
+          _vm._v(
+            "\n      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis\n      minus sint voluptatem assumenda quae fugit aspernatur sunt\n      distinctio corrupti maxime veritatis, rem, aliquid obcaecati\n      reprehenderit nemo, atque optio quos tempore.\n    "
+          )
+        ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "playground__heading" }, [_vm._v("Captions")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "playground__caption" }, [
-        _vm._v("atque optio quos tempore.")
+      _c("div", { staticClass: "playground__box-2 playground__box" }, [
+        _c("div", { staticClass: "playground__heading" }, [_vm._v("Captions")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "playground__caption" }, [
+          _vm._v("atque optio quos tempore.")
+        ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "playground__heading" }, [_vm._v("Links")]),
+      _c("div", { staticClass: "playground__box-3 playground__box" }, [
+        _c("div", { staticClass: "playground__heading" }, [_vm._v("Links")]),
+        _vm._v(" "),
+        _c("a", { attrs: { href: "#" } }, [_vm._v("Link")])
+      ]),
       _vm._v(" "),
-      _c("a", { attrs: { href: "#" } }, [_vm._v("Link")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "playground__heading" }, [_vm._v("Box Shadow")]),
-      _vm._v(" "),
-      _c("div", { staticClass: "playground__box-shadow" }),
-      _vm._v(" "),
-      _c("div", { staticClass: "playground__heading" }, [_vm._v("Lists")]),
-      _vm._v(" "),
-      _c("ul", { staticClass: "playground__ul" }, [
-        _c("li", [
-          _c("a", { staticClass: "playground__a", attrs: { href: "#" } }, [
-            _vm._v("List 1")
-          ])
+      _c("div", { staticClass: "playground__box-4 playground__box" }, [
+        _c("div", { staticClass: "playground__heading" }, [
+          _vm._v("Box Shadow")
         ]),
         _vm._v(" "),
-        _c("li", [
-          _c("a", { staticClass: "playground__a", attrs: { href: "#" } }, [
-            _vm._v("List 2")
-          ])
-        ]),
+        _c("div", { staticClass: "playground__box-s playground__boxhadow" })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "playground__box-5 playground__box" }, [
+        _c("div", { staticClass: "playground__heading" }, [_vm._v("Lists")]),
         _vm._v(" "),
-        _c("li", [
-          _c("a", { staticClass: "playground__a", attrs: { href: "#" } }, [
-            _vm._v("List 3")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c("a", { staticClass: "playground__a", attrs: { href: "#" } }, [
-            _vm._v("List 4")
+        _c("ul", { staticClass: "playground__ul" }, [
+          _c("li", [
+            _c("a", { staticClass: "playground__a", attrs: { href: "#" } }, [
+              _vm._v("List 1")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("a", { staticClass: "playground__a", attrs: { href: "#" } }, [
+              _vm._v("List 2")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("a", { staticClass: "playground__a", attrs: { href: "#" } }, [
+              _vm._v("List 3")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c("a", { staticClass: "playground__a", attrs: { href: "#" } }, [
+              _vm._v("List 4")
+            ])
           ])
         ])
       ]),
       _vm._v(" "),
-      _c("input", { attrs: { type: "text", placeholder: "placeholder text" } }),
-      _vm._v(" "),
-      _c("div", { staticClass: "playground__heading" }, [
-        _vm._v("Inputs + Buttons")
-      ]),
-      _vm._v(" "),
-      _c("button", { staticClass: "playground__btn" }, [_vm._v("Click")]),
-      _vm._v(" "),
-      _c("button", { staticClass: "playground__btn-shadow" }, [_vm._v("Click")])
+      _c("div", { staticClass: "playground__box-6 playground__box" }, [
+        _c("div", { staticClass: "playground__heading" }, [
+          _vm._v("Inputs + Buttons")
+        ]),
+        _vm._v(" "),
+        _c("input", {
+          attrs: { type: "text", placeholder: "placeholder text" }
+        }),
+        _vm._v(" "),
+        _c("button", { staticClass: "playground__btn" }, [_vm._v("Click")]),
+        _vm._v(" "),
+        _c("button", { staticClass: "playground__btn-shadow" }, [
+          _vm._v("Click")
+        ])
+      ])
     ])
   }
 ]

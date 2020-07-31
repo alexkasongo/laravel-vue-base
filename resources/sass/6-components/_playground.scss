@@ -9,16 +9,23 @@
 @import "../4-layout/page";
 
 .playground {
-    width: 500px;
+    width: 1200px;
     @include push--auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
 
+    &__box {
+        background-color: $gray;
+        padding: 5px;
+    }
     &__heading {
         @include h2($white);
         @include flexbox;
-        @include justify-content(center);
+        @include justify-content(flex-start);
         @include align-items(center);
         background-color: $mine-shaft;
-        margin: 10px 0;
+        margin: 0 0 10px 0;
         height: 60px;
     }
     &__h1 {
@@ -58,15 +65,20 @@
     input {
         @include input;
         @include color($chartreuse);
+        text-transform: uppercase;
+        width: 100%;
+        margin-bottom: 10px;
     }
     &__btn {
         @include button;
         @include color($chartreuse);
+        text-transform: uppercase;
         margin-bottom: 10px;
     }
     &__btn-shadow {
         @include button-shadow;
         @include color($chartreuse);
+        text-transform: uppercase;
         margin-bottom: 10px;
     }
     &__ul {

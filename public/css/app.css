@@ -1062,9 +1062,17 @@ p {
 }
 
 .playground {
-  width: 500px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.playground__box {
+  background-color: #939598;
+  padding: 5px;
 }
 
 .playground__heading {
@@ -1072,10 +1080,10 @@ p {
   font-family: "Lato-Bold", sans-serif;
   font-size: 36px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: #3b3b3b;
-  margin: 10px 0;
+  margin: 0 0 10px 0;
   height: 60px;
 }
 
@@ -1179,6 +1187,9 @@ p {
   background: -moz-linear-gradient(top, #adfe53, #8efe11);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#adfe53", endColorstr="#8efe11");
   color: #434f37;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .playground input:hover {
@@ -1202,13 +1213,13 @@ p {
   text-align: center;
   text-decoration: none;
   border: none;
-  color: #939598;
   border-radius: 0;
   border: solid 1px #87fe02;
   background-color: #8efe11;
   background: -moz-linear-gradient(top, #adfe53, #8efe11);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#adfe53", endColorstr="#8efe11");
   color: #434f37;
+  text-transform: uppercase;
   margin-bottom: 10px;
 }
 
@@ -1242,7 +1253,6 @@ p {
   text-align: center;
   text-decoration: none;
   border: none;
-  color: #939598;
   border-radius: 0;
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
   border: solid 1px #87fe02;
@@ -1250,6 +1260,7 @@ p {
   background: -moz-linear-gradient(top, #adfe53, #8efe11);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#adfe53", endColorstr="#8efe11");
   color: #434f37;
+  text-transform: uppercase;
   margin-bottom: 10px;
 }
 

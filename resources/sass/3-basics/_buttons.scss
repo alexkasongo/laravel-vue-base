@@ -45,7 +45,7 @@
 * BUTTON
 */
 
-@mixin button($color: $gray) {
+@mixin button {
     display: inline-block;
     padding: 10px 20px;
     outline: none;
@@ -53,7 +53,6 @@
     text-align: center;
     text-decoration: none;
     border: none;
-    color: $color;
     @include rounded(0);
     &:hover {
         text-decoration: none;
@@ -63,7 +62,7 @@
         top: 1px;
     }
 }
-@mixin button-shadow($color: $gray) {
+@mixin button-shadow {
     display: inline-block;
     padding: 10px 20px;
     outline: none;
@@ -71,7 +70,6 @@
     text-align: center;
     text-decoration: none;
     border: none;
-    color: $color;
     @include rounded(0);
     //this determines Mozilla to show the padding
     @include shadow;
