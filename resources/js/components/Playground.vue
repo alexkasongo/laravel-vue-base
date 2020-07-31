@@ -1,7 +1,6 @@
 <template>
   <div class="playground page USD">
     <div class="playground__heading">Typography</div>
-
     <h1 class="playground__h1">H1 h1</h1>
     <h2 class="playground__h2">H2 h2</h2>
     <h3 class="playground__h3">H3 h3</h3>
@@ -14,22 +13,30 @@
       distinctio corrupti maxime veritatis, rem, aliquid obcaecati
       reprehenderit nemo, atque optio quos tempore.
     </div>
-
     <div class="playground__heading">Captions</div>
-
     <div class="playground__caption">atque optio quos tempore.</div>
-
     <div class="playground__heading">Links</div>
     <a href="#">Link</a>
-
     <div class="playground__heading">Box Shadow</div>
-
     <div class="playground__box-shadow"></div>
-
-    <div class="playground__heading">Inputs + Buttons</div>
-
     <input type="text" placeholder="placeholder text" />
+    <div class="playground__heading">Inputs + Buttons</div>
     <button>Click</button>
+    <div class="playground__heading">Lists</div>
+    <ul class="playground__ul">
+      <li>
+        <a href="#" class="playground__a">List 1</a>
+      </li>
+      <li>
+        <a href="#" class="playground__a">List 2</a>
+      </li>
+      <li>
+        <a href="#" class="playground__a">List 3</a>
+      </li>
+      <li>
+        <a href="#" class="playground__a">List 4</a>
+      </li>
+    </ul>
   </div>
 </template>
 

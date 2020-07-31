@@ -1943,6 +1943,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "playground-component",
   mounted: function mounted() {
@@ -37586,13 +37593,41 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("div", { staticClass: "playground__box-shadow" }),
       _vm._v(" "),
+      _c("input", { attrs: { type: "text", placeholder: "placeholder text" } }),
+      _vm._v(" "),
       _c("div", { staticClass: "playground__heading" }, [
         _vm._v("Inputs + Buttons")
       ]),
       _vm._v(" "),
-      _c("input", { attrs: { type: "text", placeholder: "placeholder text" } }),
+      _c("button", [_vm._v("Click")]),
       _vm._v(" "),
-      _c("button", [_vm._v("Click")])
+      _c("div", { staticClass: "playground__heading" }, [_vm._v("Lists")]),
+      _vm._v(" "),
+      _c("ul", { staticClass: "playground__ul" }, [
+        _c("li", [
+          _c("a", { staticClass: "playground__a", attrs: { href: "#" } }, [
+            _vm._v("List 1")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { staticClass: "playground__a", attrs: { href: "#" } }, [
+            _vm._v("List 2")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { staticClass: "playground__a", attrs: { href: "#" } }, [
+            _vm._v("List 3")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { staticClass: "playground__a", attrs: { href: "#" } }, [
+            _vm._v("List 4")
+          ])
+        ])
+      ])
     ])
   }
 ]

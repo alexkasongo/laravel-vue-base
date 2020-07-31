@@ -52,16 +52,16 @@
         height: 200px;
         border-radius: 8px;
         box-shadow: $box-shadow;
-        @include linear-gradient(rgb(250, 128, 114), rgb(173, 216, 230) 100%);
+        @include linear-gradient(rgb(59, 59, 59), rgb(142, 254, 17) 100%);
         margin: 10px 0 10px 0;
     }
     input {
         @include input;
-        @include color(salmon);
+        @include color($chartreuse);
     }
     button {
         @include button;
-        @include color(salmon);
+        @include color($chartreuse);
         margin-bottom: 10px;
     }
 }
