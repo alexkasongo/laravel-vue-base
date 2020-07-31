@@ -72,7 +72,9 @@ $all-text-inputs-hf: $unquoted-inputs-list-hf;
 textarea {
     @include text;
     @include input-placeholder {
-        @include para($white);
+        @include para($mine-shaft);
+        font-size: 12px;
+        letter-spacing: 2px;
     }
 }
 
@@ -81,13 +83,15 @@ textarea {
 //************************************************************************//
 #{$all-text-inputs-hf},
 textarea {
-    border-radius: 8px;
+    border-radius: 0;
     outline: none;
 }
 
 @mixin input {
-    padding: 10px 18px;
+    padding: 14px 28px;
+    font-size: 12px;
+    letter-spacing: 2px;
     border: none;
     box-shadow: $box-shadow;
-    border-radius: 8px;
+    border-radius: 0;
 }

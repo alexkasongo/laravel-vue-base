@@ -31,13 +31,13 @@
 @mixin color($background) {
     border: solid 1px darken($background, 3%);
     @include gradient(lighten($background, 13%), $background);
-    color: mix(#fff, $background, 90%);
+    color: mix($mine-shaft, $background, 100%);
     &:hover {
         @include gradient(lighten($background, 10%), darken($background, 5%));
     }
     &:active {
         @include gradient($background, lighten($background, 10%));
-        color: mix(#fff, $background, 70%);
+        color: mix($mine-shaft, $background, 70%);
     }
 }
 
@@ -47,13 +47,34 @@
 
 @mixin button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 14px 28px;
+    font-size: 12px;
+    letter-spacing: 2px;
     outline: none;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
     border: none;
-    @include rounded(8px);
+    @include rounded(0);
+    &:hover {
+        text-decoration: none;
+    }
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+}
+@mixin button-shadow {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    @include rounded(0);
     //this determines Mozilla to show the padding
     @include shadow;
     &:hover {

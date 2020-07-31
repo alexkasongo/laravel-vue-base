@@ -9,12 +9,29 @@
 @import "../4-layout/page";
 
 .playground {
-    width: 500px;
+    width: 1200px;
+    margin: 50px 0;
     @include push--auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
 
+    &__box {
+        background-color: $gray;
+        padding: 5px;
+    }
+    &__heading {
+        @include h2($white);
+        @include flexbox;
+        @include justify-content(flex-start);
+        @include align-items(center);
+        background-color: $mine-shaft;
+        margin: 0 0 10px 0;
+        padding: 0 0 0 5px;
+        height: 60px;
+    }
     &__h1 {
         @include h1;
-        background-color: salmon;
     }
     &__h2 {
         @include h2;
@@ -44,16 +61,30 @@
         height: 200px;
         border-radius: 8px;
         box-shadow: $box-shadow;
-        @include linear-gradient(rgb(250, 128, 114), rgb(173, 216, 230) 100%);
+        @include linear-gradient(rgb(59, 59, 59), rgb(142, 254, 17) 100%);
         margin: 10px 0 10px 0;
     }
     input {
         @include input;
-        @include color(salmon);
+        @include color($chartreuse);
+        text-transform: uppercase;
+        width: 100%;
+        margin-bottom: 10px;
     }
-    button {
+    &__btn {
         @include button;
-        @include color(salmon);
+        @include color($chartreuse);
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    &__btn-shadow {
+        @include button-shadow;
+        @include color($chartreuse);
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    &__ul {
+        margin: 0 0 10px 0;
     }
 }
 
