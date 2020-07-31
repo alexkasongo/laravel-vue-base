@@ -12,9 +12,17 @@
     width: 500px;
     @include push--auto;
 
+    &__heading {
+        @include h2($white);
+        @include flexbox;
+        @include justify-content(center);
+        @include align-items(center);
+        background-color: $mine-shaft;
+        margin: 10px 0;
+        height: 60px;
+    }
     &__h1 {
         @include h1;
-        background-color: salmon;
     }
     &__h2 {
         @include h2;
@@ -54,6 +62,7 @@
     button {
         @include button;
         @include color(salmon);
+        margin-bottom: 10px;
     }
 }
 

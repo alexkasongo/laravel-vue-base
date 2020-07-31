@@ -1931,6 +1931,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "playground-component",
   mounted: function mounted() {
@@ -37540,6 +37552,8 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "playground page USD" }, [
+      _c("div", { staticClass: "playground__heading" }, [_vm._v("Typography")]),
+      _vm._v(" "),
       _c("h1", { staticClass: "playground__h1" }, [_vm._v("H1 h1")]),
       _vm._v(" "),
       _c("h2", { staticClass: "playground__h2" }, [_vm._v("H2 h2")]),
@@ -37558,13 +37572,23 @@ var staticRenderFns = [
         )
       ]),
       _vm._v(" "),
+      _c("div", { staticClass: "playground__heading" }, [_vm._v("Captions")]),
+      _vm._v(" "),
       _c("div", { staticClass: "playground__caption" }, [
         _vm._v("atque optio quos tempore.")
       ]),
       _vm._v(" "),
+      _c("div", { staticClass: "playground__heading" }, [_vm._v("Links")]),
+      _vm._v(" "),
       _c("a", { attrs: { href: "#" } }, [_vm._v("Link")]),
       _vm._v(" "),
+      _c("div", { staticClass: "playground__heading" }, [_vm._v("Box Shadow")]),
+      _vm._v(" "),
       _c("div", { staticClass: "playground__box-shadow" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "playground__heading" }, [
+        _vm._v("Inputs + Buttons")
+      ]),
       _vm._v(" "),
       _c("input", { attrs: { type: "text", placeholder: "placeholder text" } }),
       _vm._v(" "),
