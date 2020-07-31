@@ -26,6 +26,7 @@
         @include align-items(center);
         background-color: $mine-shaft;
         margin: 0 0 10px 0;
+        padding: 0 0 0 5px;
         height: 60px;
     }
     &__h1 {

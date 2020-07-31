@@ -73,6 +73,8 @@ textarea {
     @include text;
     @include input-placeholder {
         @include para($mine-shaft);
+        font-size: 12px;
+        letter-spacing: 2px;
     }
 }
 
@@ -86,7 +88,9 @@ textarea {
 }
 
 @mixin input {
-    padding: 10px 18px;
+    padding: 14px 28px;
+    font-size: 12px;
+    letter-spacing: 2px;
     border: none;
     box-shadow: $box-shadow;
     border-radius: 0;

@@ -652,6 +652,8 @@ textarea.placeholder {
   font-family: "Lato-Light", sans-serif;
   font-size: 16px;
   line-height: 1.45;
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 
 * input:-moz-placeholder,
@@ -660,6 +662,8 @@ textarea:-moz-placeholder {
   font-family: "Lato-Light", sans-serif;
   font-size: 16px;
   line-height: 1.45;
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 
 * input::-moz-placeholder,
@@ -668,6 +672,8 @@ textarea::-moz-placeholder {
   font-family: "Lato-Light", sans-serif;
   font-size: 16px;
   line-height: 1.45;
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 
 * input:-ms-input-placeholder,
@@ -676,6 +682,8 @@ textarea:-ms-input-placeholder {
   font-family: "Lato-Light", sans-serif;
   font-size: 16px;
   line-height: 1.45;
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 
 * input::-webkit-input-placeholder,
@@ -684,6 +692,8 @@ textarea::-webkit-input-placeholder {
   font-family: "Lato-Light", sans-serif;
   font-size: 16px;
   line-height: 1.45;
+  font-size: 12px;
+  letter-spacing: 2px;
 }
 
 input[type=email]:hover,
@@ -1084,6 +1094,7 @@ p {
   align-items: center;
   background-color: #3b3b3b;
   margin: 0 0 10px 0;
+  padding: 0 0 0 5px;
   height: 60px;
 }
 
@@ -1178,7 +1189,9 @@ p {
 }
 
 .playground input {
-  padding: 10px 18px;
+  padding: 14px 28px;
+  font-size: 12px;
+  letter-spacing: 2px;
   border: none;
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
   border-radius: 0;
@@ -1186,7 +1199,7 @@ p {
   background-color: #8efe11;
   background: -moz-linear-gradient(top, #adfe53, #8efe11);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#adfe53", endColorstr="#8efe11");
-  color: #434f37;
+  color: #3b3b3b;
   text-transform: uppercase;
   width: 100%;
   margin-bottom: 10px;
@@ -1207,7 +1220,9 @@ p {
 
 .playground__btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 14px 28px;
+  font-size: 12px;
+  letter-spacing: 2px;
   outline: none;
   cursor: pointer;
   text-align: center;
@@ -1218,7 +1233,7 @@ p {
   background-color: #8efe11;
   background: -moz-linear-gradient(top, #adfe53, #8efe11);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#adfe53", endColorstr="#8efe11");
-  color: #434f37;
+  color: #3b3b3b;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -1247,7 +1262,9 @@ p {
 
 .playground__btn-shadow {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 14px 28px;
+  font-size: 12px;
+  letter-spacing: 2px;
   outline: none;
   cursor: pointer;
   text-align: center;
@@ -1259,7 +1276,7 @@ p {
   background-color: #8efe11;
   background: -moz-linear-gradient(top, #adfe53, #8efe11);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#adfe53", endColorstr="#8efe11");
-  color: #434f37;
+  color: #3b3b3b;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
